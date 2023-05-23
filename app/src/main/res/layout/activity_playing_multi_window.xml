@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:id="@+id/Root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bg_title_screen"
+        android:orientation="vertical"
+        tools:context=".PlayingActivity">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/PlayView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:animateLayoutChanges="true"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageButton
+                android:id="@+id/num7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:alpha="1"
+                android:background="@drawable/bg_pressed_playbuttons"
+                android:contentDescription="@string/NumButtons"
+                android:onClick="onClickPlayButtons"
+                android:scaleType="fitXY"
+                android:tag="7"
+                app:layout_constraintBottom_toTopOf="@+id/num4"
+                app:layout_constraintEnd_toStartOf="@+id/num8"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@drawable/ic_circle3d"
+                tools:src="@drawable/ic_previous_move"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/num8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:alpha="1"
+                android:background="@drawable/bg_pressed_playbuttons"
+                android:contentDescription="@string/NumButtons"
+                android:onClick="onClickPlayButtons"
+                android:scaleType="fitXY"
+                android:tag="8"
+                app:layout_constraintBottom_toTopOf="@+id/num5"
+                app:layout_constraintEnd_toStartOf="@+id/num9"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/num7"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@drawable/ic_cross3d"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/num9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
+                android:alpha="1"
+                android:background="@drawable/bg_pressed_playbuttons"
+                android:contentDescription="@string/NumButtons"
+                android:onClick="onClickPlayButtons"
+                android:scaleType="fitXY"
+                android:tag="9"
+                app:layout_constraintBottom_toTopOf="@+id/num6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/num8"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@drawable/ic_circle3d"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/num4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:alpha="1"
+                android:background="@drawable/bg_pressed_playbuttons"
+                android:contentDescription="@string/NumButtons"
+                android:onClick="onClickPlayButtons"
+                android:scaleType="fitXY"
+                android:tag="4"
+                app:layout_constraintBottom_toTopOf="@+id/num1"
+                app:layout_constraintEnd_toStartOf="@+id/num5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/num7"
+                tools:background="@drawable/ic_cross3d"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/num5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:alpha="1"
+                android:background="@drawable/bg_pressed_playbuttons"
+                android:contentDescription="@string/NumButtons"
+                android:onClick="onClickPlayButtons"
+                android:scaleType="fitXY"
+                android:tag="5"
+                app:layout_constraintBottom_toTopOf="@+id/num2"
+                app:layout_constraintEnd_toStartOf="@+id/num6"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/num4"
+                app:layout_constraintTop_toBottomOf="@+id/num8"
+                tools:background="@drawable/ic_circle3d"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/num6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
+                android:alpha="1"
+                android:background="@drawable/bg_pressed_playbuttons"
+                android:contentDescription="@string/NumButtons"
+                android:onClick="onClickPlayButtons"
+                android:scaleType="fitXY"
+                android:tag="6"
+                app:layout_constraintBottom_toTopOf="@+id/num3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/num5"
+                app:layout_constraintTop_toBottomOf="@+id/num9"
+                tools:background="@drawable/ic_cross3d"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/num1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:alpha="1"
+                android:background="@drawable/bg_pressed_playbuttons"
+                android:contentDescription="@string/NumButtons"
+                android:onClick="onClickPlayButtons"
+                android:scaleType="fitXY"
+                android:tag="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/num2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/num4"
+                tools:background="@drawable/ic_circle3d"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/num2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:alpha="1"
+                android:background="@drawable/bg_pressed_playbuttons"
+                android:contentDescription="@string/NumButtons"
+                android:onClick="onClickPlayButtons"
+                android:scaleType="fitXY"
+                android:tag="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/num3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/num1"
+                app:layout_constraintTop_toBottomOf="@+id/num5"
+                tools:background="@drawable/ic_cross3d"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/num3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:alpha="1"
+                android:background="@drawable/bg_pressed_playbuttons"
+                android:contentDescription="@string/NumButtons"
+                android:onClick="onClickPlayButtons"
+                android:scaleType="fitXY"
+                android:tag="3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/num2"
+                app:layout_constraintTop_toBottomOf="@+id/num6"
+                tools:background="@drawable/ic_circle3d"
+                tools:visibility="visible" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#031450"
+                app:layout_constraintBottom_toTopOf="@+id/num5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/num8" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#031450"
+                app:layout_constraintBottom_toTopOf="@+id/num2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/num5" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#031450"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/num5"
+                app:layout_constraintStart_toEndOf="@+id/num4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#031450"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/num6"
+                app:layout_constraintStart_toEndOf="@+id/num5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0" />
+
+        <TextView
+            android:id="@+id/gameInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="#EDDA2D"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/Greetings"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#595751" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/PlayersView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:animateLayoutChanges="true"
+            android:background="#4D7EA8E8"
+            android:paddingStart="7dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/startAndRestartDefault"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:onClick="onClickStartButton"
+                android:padding="4dp"
+                android:text="@string/StartButton"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#595751"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/restartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/startAndRestartDefault"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:onClick="onClickRestartButton"
+                android:padding="4dp"
+                android:text="@string/RestartButton"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#595751"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/startButton"
+                app:layout_constraintEnd_toEndOf="@+id/startButton"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/player1_profile"
+                app:layout_constraintStart_toStartOf="@+id/startButton"
+                app:layout_constraintTop_toTopOf="@+id/startButton" />
+
+            <ImageButton
+                android:id="@+id/player2_profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="9dp"
+                android:background="#213373"
+                android:contentDescription="@string/playerProfile"
+                android:onClick="addOrChangePlayer"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_default_opponent_pfp"
+                app:layout_constraintBottom_toTopOf="@+id/player2_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/startButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <ImageButton
+                android:id="@+id/player1_profile"
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="9dp"
+                android:background="#213373"
+                android:contentDescription="@string/playerProfile"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_default_opponent_pfp"
+                app:layout_constraintBottom_toBottomOf="@+id/player2_profile"
+                app:layout_constraintEnd_toStartOf="@+id/startButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/player2_profile"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <ImageView
+                android:id="@+id/player2_symbol"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/playerSign"
+                app:layout_constraintBottom_toBottomOf="@+id/player2_profile"
+                app:layout_constraintEnd_toEndOf="@+id/player2_profile"
+                app:srcCompat="@drawable/ic_circle3d" />
+
+            <ImageView
+                android:id="@+id/player1_symbol"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/playerSign"
+                app:layout_constraintBottom_toBottomOf="@+id/player1_profile"
+                app:layout_constraintEnd_toEndOf="@+id/player1_profile"
+                app:srcCompat="@drawable/ic_cross3d" />
+
+            <ImageView
+                android:id="@+id/swapButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/Swap"
+                android:onClick="swapPlayers"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/player2_profile"
+                app:layout_constraintStart_toEndOf="@+id/player1_profile"
+                app:srcCompat="@drawable/button_ic_swap"
+                tools:visibility="invisible" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/saveButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="onClickSaveButton"
+                android:visibility="invisible"
+                app:cardCornerRadius="45dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/player2_profile"
+                app:layout_constraintStart_toEndOf="@+id/player1_profile"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/saveLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/design_default_color_secondary_variant"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@android:drawable/ic_menu_save" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/player1_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF48E"
+                android:contentDescription="@string/playerName"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="@string/defaultFoeName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#595751"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/player1_profile"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/player1_profile"
+                app:layout_constraintTop_toTopOf="@+id/player2_name" />
+
+            <TextView
+                android:id="@+id/player2_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF48E"
+                android:contentDescription="@string/playerName"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="@string/defaultFoeName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#595751"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/player2_profile"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/player2_profile"
+                app:layout_constraintTop_toBottomOf="@+id/player2_profile" />
+
+            <TextView
+                android:id="@+id/scoreboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#0E2167"
+                android:drawablePadding="8dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:text="@string/defaultScore"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/swapButton"
+                app:layout_constraintEnd_toStartOf="@+id/player2_profile"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/player1_profile"
+                app:layout_constraintTop_toBottomOf="@+id/startButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</ScrollView>

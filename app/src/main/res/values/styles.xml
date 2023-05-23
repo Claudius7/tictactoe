@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="PlayingTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2546EA</item>
+        <item name="colorPrimaryDark">#102673</item>
+        <item name="colorAccent">#031450</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+</resources>

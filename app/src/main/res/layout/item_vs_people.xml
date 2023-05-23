@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewVSP"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/p1Profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/playerProfile"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/p1Name"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:background="#FFC107"
+            android:gravity="start|center_vertical"
+            android:padding="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#595751"
+            tools:text="Claudius77" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#F44336"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/versus"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#595751" />
+
+        <ImageView
+            android:id="@+id/p2Profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/playerProfile"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/p2Name"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:background="#FFC107"
+            android:gravity="start|center_vertical"
+            android:padding="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#595751"
+            tools:text="Claudine77" />
+
+        <TextView
+            android:id="@+id/scoreVSP"
+            android:layout_width="72dp"
+            android:layout_height="50dp"
+            android:background="#03A9F4"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#595751"
+            tools:text="4 : 7" />
+    </LinearLayout>
+</HorizontalScrollView>

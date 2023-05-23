@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="#00FFFFFF">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#181C5C"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/femalePhoto"
+            android:layout_width="135dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ic_previous_move"
+            android:contentDescription="@string/playerProfile"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/selectFromGallery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/malePhoto"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/ic_default_female_pfp" />
+
+        <ImageView
+            android:id="@+id/malePhoto"
+            android:layout_width="135dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ic_previous_move"
+            android:contentDescription="@string/playerProfile"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/selectFromGallery"
+            app:layout_constraintEnd_toStartOf="@+id/femalePhoto"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/ic_default_male_pfp" />
+
+        <TextView
+            android:id="@+id/selectFromGallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_pressed_button"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:padding="@dimen/default_gap"
+            android:text="@string/pickFromGalleryTV"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#595751"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="@+id/femalePhoto"
+            app:layout_constraintStart_toStartOf="@+id/malePhoto" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/femalePhoto"
+            app:layout_constraintStart_toStartOf="@+id/malePhoto">
+
+            <TextView
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pressed_button"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:padding="@dimen/default_gap"
+                android:text="@string/cancel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#595751" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFF48E"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/titlePID"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#595751"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

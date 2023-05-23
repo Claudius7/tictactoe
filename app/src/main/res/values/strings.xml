@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name" translatable="false">Tic Tac Toe</string>
+
+    <!-- TextHelper (TextView) Strings -->
+        <string name="playing_textview_cross_starts">--- %s starts first ---</string>
+        <string name="playing_textview_player_starts">--- You move first ---</string>
+        <string name="compStarts">Computer moves first</string>
+        <string name="invalidMove">--- Invalid move ---</string>
+        <string name="playerTurnVsPlayer">--- It\'s your turn %s ---</string>
+        <string name="compTurn">Waiting for computer…</string>
+        <string name="playerTurnVsAi">--- It\'s your turn ---</string>
+        <string name="playerWinner">--- %s wins! ---</string>
+        <string name="playerLostToComp">--- You lost! ---</string>
+        <string name="playerWonAgainstComp">--- You won! ---</string>
+        <string name="scoreboardText">%1$s : %2$s</string>
+        <string name="Tied">--- Tie! ---</string>
+        <string name="informToBegin">Press START to begin</string>
+
+    <!-- Dialogs -->
+        <string name="confirm">Confirm</string>
+        <string name="cancel">Cancel</string>
+        <string name="yes">Yes</string>
+        <string name="no">No</string>
+        <string name="done">Done</string>
+        <string name="close">Close</string>
+
+        <!-- TitleScreenActivity restoreGameDialog-->
+            <string name="titleRGD">"Load game?"</string>
+            <string name="messageRGD">"You have an interrupted game.\n<br/>Load game?"</string>
+            <string name="continueText">Continue</string>
+            <string name="newGame">New game</string>
+
+        <!-- TitleScreenActivity createPlayerDialog-->
+            <string name="createText">Create</string>
+            <string name="editText">Edit</string>
+
+            <string name="titleCPD">Warning</string>
+            <string name="messageCPD">Changing your name is not possible however you can EDIT your profile picture or CREATE a new player instead.%sWould you like to EDIT your profile or CREATE a new player?</string>
+
+        <!-- TitleScreenActivity PickImageDialog (Custom Dialog) -->
+            <string name="titlePID">Pick your profile picture</string>
+            <string name="pickFromGalleryTV">Choose from phone</string>
+
+        <!-- TitleScreenActivity PickPlayerDialog (Custom Dialog) -->
+            <string name="titlePPD">Pick your player</string>
+            <string name="messagePPD">Set this player as computer or person?</string>
+            <string name="positiveButtonPPD">Person</string>
+            <string name="negativeButtonPPD">Computer</string>
+
+            <!-- PickPlayerDialog's deletingPlayerDialog -->
+            <string name="titleDPD">Delete player</string>
+            <string name="messageDPD">Deleting this player will remove this player\'s profile but scores are saved. Proceed to delete %s?</string>
+
+        <!-- TitleScreenActivity RankingsDialog (Custom Dialog) -->
+            <string name="versus" translatable="false">VS</string>
+            <string name="versusComputer">VS%sComputer</string>
+            <string name="versusPlayer">VS%sPlayers</string>
+            <string name="top10Text">Top #10 Players</string>
+
+        <!-- TitleScreenActivity InfoDialog (Custom Dialog) -->
+            <string name="developedBy" translatable="false">Developed by:</string>
+            <string name="developer" translatable="false">MRA Studios</string>
+            <string name="userRatings">Rate me</string>
+
+        <!-- TitleScreenActivity WarnDialog (Custom Dialog) -->
+            <string name="titleWD">Warning</string>
+            <string name="messageWD1">Tap this to change your profile picture.</string>
+            <string name="messageWD2">Tap this to change your name. (Important)</string>
+            <string name="messageWD3">You can still play without changing any of these but this
+                will not save your score and load your saved game or restore your game when
+                something unexpected occurs.%sWould you like to play anyway?</string>
+
+        <!-- PlayingActivity restartWarnDialog -->
+            <string name="titleRWD">Confirm</string>
+            <string name="pressRestart">Press Restart for next round</string>
+            <string name="messageRWD">This will delete the current progress.\n<br/>(Make sure your friend knows)</string>
+
+        <!-- PlayingActivity exitWarnDialog -->
+            <string name="titleEWD">Warning</string>
+            <string name="messageEWD">Exiting will record your scores but this will NOT SAVE your game.\n<br/>Are you sure to exit?</string>
+
+        <!-- PlayingActivity saveAndExitDialog -->
+            <string name="titleSAE">Confirm</string>
+            <string name="messageSAE">Save your game and exit?</string>
+
+        <!-- PlayingActivity CreateOpponentDialog (Custom Dialog)-->
+            <string name="titleCOD">Create opponent</string>
+            <string name="editTextTitle">Name:</string>
+            <string name="spinnerTitle">Favorites</string>
+
+            <string name="removeOpponent">Remove from Favorites</string>
+            <string name="addOpponent">Add to Favorites</string>
+
+            <string name="hint">Enter name</string>
+            <string name="limitations">Letters and numbers only\n<br/>(Max 10)</string>
+            <string name="emptyFavorites">Favorites is empty</string>
+            <string name="nameIsNotValid">Invalid name</string>
+            <string name="nameIsTaken">Invalid name. Name is already taken</string>
+
+            <string name="compName">Computer</string>
+
+        <!-- PlayingActivity SwapSymbolsDialog (Custom Dialog) -->
+            <string name="titleSSD">Swap?</string>
+            <string name="player">You</string>
+            <string name="opponent">Foe</string>
+
+    <!-- Toasts and Snackbars -->
+        <string name="informComputerIsSet">Player set to Computer</string>
+        <string name="pressBackAgain">Press again to exit</string>
+        <string name="settingProfileFailed">Setting up profile failed. No photo was selected</string>
+        <string name="addPlayers">Please add player(s) first</string>
+        <string name="add">Add</string>
+        <string name="hintName">Name</string>
+        <string name="selectPreferredApp">"Select preferred app for picking photo"</string>
+        <string name="restartUnavailable">Unavailable. This round must end first</string>
+        <string name="playerIsExisting">Invalid name. This player already exists</string>
+        <string name="gameIsNotSavedText">Game is not saved</string>
+        <string name="saveUnavailable">Unavailable. Your name is in default</string>
+        <string name="saveDeleted">Recovery save is not used and has been deleted</string>
+        <string name="returnToTitleText">Press again return to Title Screen</string>
+
+    <!-- Default strings of Views in activities -->
+        <string name="Greetings">Welcome to Tic Tac Toe</string>
+        <string name="StartButton">Start</string>
+        <string name="RestartButton">Restart</string>
+        <string name="Play">Play</string>
+        <string name="defaultPlayerName">Player</string>
+        <string name="defaultFoeName">Add player</string>
+        <string name="defaultScore" translatable="false">0 : 0</string>
+        <string name="greetFirstTimePlayer">"Welcome to%s<br />Tic Tac Toe! "</string>
+        <string name="greetPreviousPlayer">Welcome back%1$s<br />%2$s!</string>
+        <string name="changeProfile">Not you?%s<br />Tap me!</string>
+
+    <!-- Content descriptors -->
+        <string name="NumButtons" translatable="false">Play buttons</string>
+        <string name="playerProfile" translatable="false">Profile picture of the player</string>
+        <string name="playerSign" translatable="false">"Picture that tells weather the player plays as X or O "</string>
+        <string name="playerName" translatable="false">Name of the players</string>
+        <string name="HighScores" translatable="false">Highscore</string>
+        <string name="PlayerIcon" translatable="false">Players icon</string>
+        <string name="SelectProfile" translatable="false">Button for selecting image for profile picture</string>
+        <string name="Swap" translatable="false">Swap icon</string>
+        <string name="Info" translatable="false">Info</string>
+</resources>

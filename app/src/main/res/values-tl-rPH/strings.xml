@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Game Strings -->
+    <string name="compName">Kompyuter</string>
+    <string name="playing_textview_cross_starts">Si %s ang ma-uuna</string>
+    <string name="playing_textview_player_starts">Ikaw ang ma-una</string>
+    <string name="compStarts">Kompyuter ang ma-uuna</string>
+    <string name="invalidMove">Bawal ang galaw na ito</string>
+    <string name="playerTurnVsPlayer">Ikaw naman %s</string>
+    <string name="compTurn">Hintayin ang kompyuter…</string>
+    <string name="playerTurnVsAi">Ikaw na ang gagalaw</string>
+    <string name="playerWinner">Si %s ang panalo!</string>
+    <string name="playerLostToComp">Natalo ka</string>
+    <string name="playerWonAgainstComp">Panalo ka!</string>
+    <string name="scoreboardText">%1$s : %2$s</string>
+    <string name="Tied">--- Tabla! ---</string>
+    <string name="informToBegin">Pindutin ang MAGSIMULA</string>
+    <string name="defaultPlayerName">Manlalaro</string>
+
+    <!-- Dialogs -->
+    <string name="confirm">Sigurado</string>
+    <string name="cancel">Wag ituloy</string>
+    <string name="yes">Oo</string>
+    <string name="no">Hindi</string>
+
+    <!-- For restartWarnDialog -->
+    <string name="pressRestart">Pindutin ang Magsimula muli</string>
+    <string name="messageRWD">Magsisimula kayo ulit sa umpisa. (Siguraduhing alam ng kalaban)</string>
+
+    <!-- For changeNameDialog -->
+    <string name="limitations">Letra at numero lamang (hanggang 10)</string>
+    <string name="nameIsNotValid">Hindi pwede ang pangalan</string>
+    <string name="nameIsTaken">Hindi pwede ang pangalan. Nakuha na ito ng kalaban</string>
+
+    <!-- For pickPlayerDialog -->
+    <string name="titlePPD">Pumili ng manlalaro</string>
+    <string name="messagePPD">Kalaro mo ba ay kompyuter o tao?</string>
+    <string name="positiveButtonPPD">Tao</string>
+    <string name="negativeButtonPPD">Kompyuter</string>
+
+    <!-- For pickPlayerDialog -->
+
+    <!-- Toasts and Snackbars -->
+    <string name="pressBackAgain">Ulitin para umalis</string>
+    <string name="settingProfileFailed">Maling imahe. Wala kang napiling imahe</string>
+    <string name="addPlayers">Magdag-dag muna ng manlalaro</string>
+    <string name="add">Magdag-dag</string>
+    <string name="restartUnavailable">Hindi pwede ito. Tapusin muna ang larong ito</string>
+    <string name="hintName">Pangalan</string>
+    <string name="selectPreferredApp">"Pumili ng gustong app"</string>
+
+    <!-- Default strings of Buttons and TextViews in layout -->
+    <string name="Greetings">Maligayang pagdating sa Tic Tac Toe</string>
+    <string name="StartButton">Simula</string>
+    <string name="defaultFoeName">Manlalaro</string>
+
+    <!-- Content descriptors -->
+
+    <string name="informComputerIsSet">Ang manlalaro ay na-set bilang kompyuter</string>
+    <string name="titleEWD">Babala</string>
+    <string name="messageEWD">Pag-umalis ka ay ililista ang iyong puntos ngunit HINDI MAISE-SAVE ang laro mo. Nais mo parin bang umalis?</string>
+    <string name="Play">Maglaro</string>
+    <string name="titleWD">Babala</string>
+    <string name="pickFromGalleryTV">Pumili sa gallery</string>
+    <string name="greetFirstTimePlayer">Maligayang%s<br />pagdating!</string>
+    <string name="greetPreviousPlayer">Kamusta ulit%1$s<br />%2$s!</string>
+    <string name="changeProfile">Hindi ikaw?%s<br />Pindutin mo ako!</string>
+    <string name="titleDPD">Tanggalin ang manlalaro</string>
+    <string name="messageDPD">Ang pagtanggal sa manlalarong ito ay mawawala ang kanyang profile ngunit ang mga iskor ay hindi. Nais mo bang tanggalin si %s?</string>
+    <string name="titlePID">Pumili ng profile picture mo</string>
+    <string name="versusPlayer">Laban sa%sTao</string>
+    <string name="versusComputer">Laban sa %sKompyuter</string>
+    <string name="player">Ikaw</string>
+    <string name="opponent">Kalaban</string>
+    <string name="close">Isara</string>
+    <string name="userRatings">Ratings mo sa app</string>
+    <string name="playerIsExisting">Hindi pwede ang pangalan. Ang manlalarong ito ay meron na.</string>
+    <string name="messageWD1">Pindutin ito para pumili ng picture.</string>
+    <string name="messageWD2">Pindutin ito para palitan ang pangalan. (Importante)</string>
+    <string name="messageWD3">"Ma-aari ka parin maglaro kahit di mo palitan ito ngunit hindi maise-save ang iyong iskor at ang pagload ng save mo o mabawi ang progreso mo kung mangyaring di inaasahan.%sNais mo bang magpatuloy maglaro? "</string>
+    <string name="titleSSD">Magpalit?</string>
+    <string name="done">Tapos</string>
+    <string name="editTextTitle">Alyas:</string>
+    <string name="spinnerTitle">Paborito</string>
+    <string name="titleCOD">Gumawa ng kalaban</string>
+    <string name="removeOpponent">Tanggalin sa Paborito</string>
+    <string name="addOpponent">Idag-dag sa Paborito</string>
+    <string name="emptyFavorites">Wala kang Paborito</string>
+    <string name="hint">Ilagay dito</string>
+    <string name="RestartButton">Ulitin</string>
+    <string name="titleRWD">Kumpirmahin</string>
+    <string name="titleRGD">Ituloy ang laro?</string>
+    <string name="messageRGD">Meron kang laro na hindi natapos. Itutuloy mo ba ito o gumawa ng panibagong laro?</string>
+    <string name="continueText">Ituloy</string>
+    <string name="newGame">Panibago</string>
+    <string name="gameIsNotSavedText">Ang laro mo ay hindi naka-save</string>
+    <string name="titleSAE">Kumpirmahin</string>
+    <string name="messageSAE">I-save ba ang larong ito at umalis?</string>
+    <string name="saveUnavailable">Hindi puwede. Ang pangalan mo ay di napalitan</string>
+    <string name="saveDeleted">Ang save mo ay hindi mo ginamit at binura na</string>
+    <string name="createText">Gumawa</string>
+    <string name="editText">Palitan</string>
+    <string name="titleCPD">Babala</string>
+    <string name="messageCPD">Ang pag-palit ng pangalan ay hindi maa-ari ngunit maa-ari mong PALITAN ang iyong imahe o GUMAWA ng bagong manlalaro.%sNais mo bang PALITAN ang iyong imahe o GUMAWA ng bagong manlalaro?</string>
+    <string name="returnToTitleText">Pindutin ulit para bumalik sa Title</string>
+    <string name="top10Text">Ika #10 na Manlalaro</string>
+
+</resources>

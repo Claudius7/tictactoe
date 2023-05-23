@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pressedColor">#BFBFBF</color>
+    <color name="actionTextColor">#FFF48E</color>
+    <color name="startAndRestartDefault">#FFF48E</color>
+    <color name="startAndRestartPressed">#C6BD6A</color>
+</resources>

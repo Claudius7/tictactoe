@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_title_screen">
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:onClick="onClickPlayButton"
+        android:text="@string/Play"
+        android:textColor="#FFFFF48E"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_name" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pressed_button"
+        android:contentDescription="@string/playerName"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:onClick="onClickPlayerName"
+        android:text="@string/defaultPlayerName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#595751"
+        app:layout_constraintEnd_toEndOf="@+id/profilePicture"
+        app:layout_constraintStart_toStartOf="@+id/profilePicture"
+        app:layout_constraintTop_toBottomOf="@+id/profilePicture"
+        tools:text="1234567890" />
+
+
+    <ImageButton
+        android:id="@+id/profilePicture"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/ic_default_male_pfp"
+        android:contentDescription="@string/playerProfile"
+        android:cropToPadding="false"
+        android:onClick="onClickPlayerProfile"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_previous_move"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <ImageButton
+        android:id="@+id/titleLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_app_title"
+        android:clickable="true"
+        android:contentDescription="@string/Greetings"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_previous_move"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ImageView
+        android:id="@+id/rankingsButton"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="13dp"
+        android:contentDescription="@string/HighScores"
+        android:onClick="onClickRankingsButton"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/button_ic_trophy" />
+
+    <ImageView
+        android:id="@+id/infoButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.8"
+        android:contentDescription="@string/Info"
+        android:onClick="onClickInfoButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.8"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/infoButton"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/musicButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_secondary_variant"
+            android:contentDescription="@string/Info"
+            android:onClick="onClickMusicButton"
+            android:padding="8dp"
+            android:tag="1"
+            app:srcCompat="@drawable/button_ic_sound_on" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5512996" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="162dp"
+        android:layout_height="135dp"
+        android:background="@drawable/ic_greetings"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:rotation="-24"
+        android:rotationX="12"
+        android:rotationY="28"
+        android:textColor="#595751"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/player_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toEndOf="@+id/profilePicture"
+        app:layout_constraintTop_toTopOf="@+id/titleLogo"
+        app:layout_constraintVertical_bias="0.89"
+        tools:text="@string/greetFirstTimePlayer" />
+
+    <TextView
+        android:id="@+id/chooseOtherPlayer"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_ic_choose_player"
+        android:gravity="center"
+        android:onClick="onClickSelectPlayer"
+        android:paddingBottom="18dp"
+        android:textColor="#595751"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/player_name"
+        app:layout_constraintEnd_toStartOf="@+id/profilePicture"
+        app:layout_constraintTop_toTopOf="@+id/profilePicture"
+        tools:text="@string/changeProfile"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

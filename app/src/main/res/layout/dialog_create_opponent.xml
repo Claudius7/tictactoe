@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#181C5C"
+    android:paddingBottom="16dp">
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/startAndRestartDefault"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/done"
+        android:textColor="#595751"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/p2SetupImage" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:buttonTint="#FFFFF48E"
+        android:checked="false"
+        android:text="@string/compName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/doneButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p2SetupImage"
+        app:layout_constraintTop_toBottomOf="@+id/infoTV" />
+
+    <EditText
+        android:id="@+id/editTextP2Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:background="?android:attr/actionModeBackground"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="start|center_vertical"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:paddingStart="1dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <ImageView
+        android:id="@+id/p2SetupImage"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_default_male_pfp"
+        android:contentDescription="@string/playerProfile"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_previous_move"
+        android:tag="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <ImageView
+        android:id="@+id/favoriteButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/add"
+        android:scaleType="fitXY"
+        android:tag="0"
+        app:layout_constraintBottom_toBottomOf="@+id/p2SetupImage"
+        app:layout_constraintEnd_toEndOf="@+id/p2SetupImage"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/Info"
+        app:layout_constraintBottom_toBottomOf="@+id/infoTV"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/infoTV"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageView
+        android:id="@+id/pickImageButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:alpha="0.8"
+        android:background="#8BC34A"
+        android:contentDescription="@string/SelectProfile"
+        app:layout_constraintStart_toStartOf="@+id/p2SetupImage"
+        app:layout_constraintTop_toTopOf="@+id/p2SetupImage"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="3dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:foregroundGravity="left|center_vertical"
+        android:gravity="start|center_vertical"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2SetupImage" />
+
+    <TextView
+        android:id="@+id/spinnerInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="@string/spinnerTitle"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/p2SetupImage" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="?android:attr/actionModeBackground"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/editTextTitle"
+        android:textColor="#595751"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextP2Name"
+        app:layout_constraintStart_toEndOf="@+id/p2SetupImage"
+        app:layout_constraintTop_toTopOf="@+id/editTextP2Name" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFF48E"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/titleCOD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595751"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infoTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:padding="4dp"
+        android:text="@string/limitations"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextP2Name"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/editTextP2Name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
